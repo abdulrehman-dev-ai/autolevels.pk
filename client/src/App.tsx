@@ -9,6 +9,7 @@ import About from "@/pages/about";
 import Services from "@/pages/services";
 import Gallery from "@/pages/gallery";
 import Contact from "@/pages/contact";
+import Pricing from "@/pages/pricing";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
+      <Route path="/pricing" component={Pricing} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
