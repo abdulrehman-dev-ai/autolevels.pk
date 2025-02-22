@@ -1,0 +1,48 @@
+Create a sleek, modern, and high-performance static website for Auto Levels, a vehicle modification shop specializing in luxury upgrades for 4x4 vehicles like Lexus, Land Cruiser, and Prado. The website should reflect premium automotive craftsmanship with a bold orange-yellow color scheme, symbolizing energy, performance, and innovation.
+
+Key Features & Design Requirements:
+✅ Exclusively Use 4x4 Vehicle Images
+
+All visuals should strictly feature 4x4 vehicles such as Lexus, Land Cruiser, Prado, and other high-end off-road SUVs.
+Avoid generic car images—focus on luxury vehicle modifications and rugged, performance-driven aesthetics.
+✅ Fully Responsive Design
+
+The website must be optimized for all devices—desktop, tablet, and mobile.
+Ensure seamless navigation, fast loading speeds, and a fluid, adaptive layout.
+✅ Custom Branding & Assets
+
+The website will not include generic placeholder logos. I will provide my own logo and branding elements.
+The typography and color palette should align with a premium, high-performance automotive brand.
+Page Structure & Content:
+🚀 Home – A visually striking landing page showcasing high-end 4x4 vehicle modifications with bold imagery, engaging animations, and a compelling call-to-action.
+
+🔧 About Us – Highlight Auto Levels' expertise in vehicle customization, modifications, buying, and selling. Showcase trust, credibility, and industry experience.
+
+⚙️ Services – Detailed breakdown of the services, including:
+
+Luxury Interior & Exterior Upgrades
+Performance Modifications & Off-Road Enhancements
+Vehicle Buying & Selling
+📸 Gallery – A high-resolution image gallery displaying before-and-after transformations of modified vehicles. The gallery should be grid-based with a lightbox feature for enlarged views.
+
+💰 Packages & Pricing – A dedicated section displaying:
+
+Various modification packages (Standard, Premium, Custom, etc.)
+Transparent pricing plans, features, and customization options
+Call-to-action buttons for inquiries or bookings
+📍 Contact – A user-friendly contact section including:
+
+Inquiry form with name, email, phone, and message fields
+Physical location with an interactive Google Maps embed
+Social media links (Instagram, Facebook, WhatsApp, etc.)
+Additional Requirements:
+🔹 SEO-Optimized & Fast Loading – Ensure proper meta tags, alt text, and lightweight assets for better search rankings.
+🔹 Smooth Animations & Interactive Elements – Use Framer Motion, GSAP, or CSS animations to enhance engagement.
+🔹 Dark Mode Compatibility – Optional, but preferred for a more immersive experience.
+🔹 Clear & Concise Typography – Use modern, professional fonts with bold headlines and easy-to-read text.
+
+Overall Look & Feel:
+✅ Sleek, Modern, & Premium – Reflecting high-end vehicle modifications
+✅ High-Contrast & Bold – Orange-yellow theme with black/dark elements for a luxurious aesthetic
+✅ Engaging & Interactive – Smooth transitions, hover effects, and micro-interactions
+
