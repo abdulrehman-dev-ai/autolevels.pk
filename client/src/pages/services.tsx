@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ServiceCard } from "@/components/ui/service-card";
-import { Settings, Paintbrush, Wrench, Car, Shield, SpannerIcon, Gauge, FileSpreadsheet } from "lucide-react";
+import { Settings, Paintbrush, Wrench, Car, Shield, Hammer, Gauge, FileSpreadsheet } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -62,7 +62,7 @@ export default function Services() {
     {
       title: "Maintenance Services",
       description: "Keep your modified vehicle in peak condition.",
-      icon: <SpannerIcon className="w-6 h-6 text-primary" />,
+      icon: <Hammer className="w-6 h-6 text-primary" />,
       features: [
         "Custom service schedules",
         "Performance diagnostics",
