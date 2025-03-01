@@ -8,9 +8,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
   const apiRouter = express.Router();
   app.use('/api', apiRouter);
 
-  // Add your API routes here
+  // Health check endpoint for Vercel
   apiRouter.get('/health', (req, res) => {
-    res.json({ status: 'ok' });
+    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  });
+
+  // Error handling for API routes
+  apiRouter.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
+    console.error(err.stack);
+    res.status(500).json({ 
+      error: 'Internal Server Error',
+      message: process.env.NODE_ENV === 'development' ? err.message : undefined
+    });
   });
 
   const httpServer = createServer(app);
