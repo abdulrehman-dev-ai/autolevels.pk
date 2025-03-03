@@ -22,6 +22,7 @@ function Router() {
       <Route path="/pricing" component={Pricing} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/:id" component={Blog} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
