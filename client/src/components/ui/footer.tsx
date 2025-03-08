@@ -1,16 +1,19 @@
 import { Link } from "wouter";
-import { Instagram, Facebook, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/black.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background border-t">
+    <footer className="bg-#011b3d border-t">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Auto Levels</h3>
+            <Link href="/">
+              <img src={logo} alt="Auto Levels Logo" className="h-24 mb-4 cursor-pointer" />
+            </Link>
             <p className="text-muted-foreground mb-4">
               Premium vehicle modifications for luxury 4x4 vehicles. Transform your ride with
               our expert customization services.
@@ -58,11 +61,25 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4" />
-                123 Modification Ave, Dubai, UAE
+                <span>
+                  18 A Jail Road Qartaba Chowk, Lahore <br />
+                  <a 
+                    href="https://g.co/kgs/1BVfeS8" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-primary hover:underline"
+                  >
+                    View on Google Maps
+                  </a>
+                </span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="w-4 h-4" />
-                +971 50 123 4567
+                +92 (302) 1070707
+              </li>
+              <li className="flex items-center gap-2 text-muted-foreground">
+                <Phone className="w-4 h-4" />
+                +92 (300) 4714191
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
@@ -76,7 +93,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/autolevelspk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"
@@ -84,7 +101,7 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/Autolevels.pk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"
@@ -92,15 +109,7 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/c/AutoLevels"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"

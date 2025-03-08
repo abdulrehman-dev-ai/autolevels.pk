@@ -1,17 +1,43 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { Button } from "./button";
 import { Link } from "wouter";
 
+const images = [
+  "https://wallpapercave.com/wp/wp9474984.jpg",
+  "https://wallpapercave.com/wp/wp2499227.jpg",
+  "https://wallpapercave.com/wp/wp6633253.jpg",
+  "https://wallpapercave.com/wp/wp9353405.jpg"
+];
+
 export function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1533473359331-0135ef1b58bf)",
-        }}
-      />
+      {/* AnimatePresence ensures smooth exit animations */}
+      <AnimatePresence>
+        <motion.div
+          key={currentImageIndex} // Ensures re-render when index changes
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${images[currentImageIndex]})`,
+          }}
+          initial={{ x: "100%", opacity: 0 }} // Start position (off-screen right)
+          animate={{ x: "0%", opacity: 1 }} // Enter position (center screen)
+          exit={{ x: "-100%", opacity: 0 }} // Exit position (off-screen left)
+          transition={{ duration: 1 }} // Smooth transition
+        />
+      </AnimatePresence>
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -38,7 +64,7 @@ export function Hero() {
             </Link>
             
             <Link href="/gallery">
-              <Button size="lg" variant="outline" className="font-semibold text-white border-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="font-semibold text-white bg-white/10 backdrop-blur-md border-white/30 hover:bg-white/20 transition-all duration-300">
                 View Gallery
               </Button>
             </Link>

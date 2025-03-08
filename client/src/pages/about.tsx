@@ -4,23 +4,23 @@ import { Medal, Clock, Wrench, Users } from "lucide-react";
 export default function About() {
   const stats = [
     {
-      icon: <Medal className="w-6 h-6 text-primary" />,
-      value: "10+",
+      icon: <Medal className="w-6 h-6 text-primary" />, 
+      value: "10+", 
       label: "Years Experience"
     },
     {
-      icon: <Clock className="w-6 h-6 text-primary" />,
-      value: "500+",
+      icon: <Clock className="w-6 h-6 text-primary" />, 
+      value: "500+", 
       label: "Projects Completed"
     },
     {
-      icon: <Wrench className="w-6 h-6 text-primary" />,
-      value: "50+",
+      icon: <Wrench className="w-6 h-6 text-primary" />, 
+      value: "50+", 
       label: "Custom Mods"
     },
     {
-      icon: <Users className="w-6 h-6 text-primary" />,
-      value: "1000+",
+      icon: <Users className="w-6 h-6 text-primary" />, 
+      value: "1000+", 
       label: "Happy Clients"
     }
   ];
@@ -69,12 +69,21 @@ export default function About() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
+              className="grid grid-cols-2 gap-4"
             >
-              <img
-                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-                alt="Workshop"
-                className="rounded-lg shadow-xl"
-              />
+              {[
+                "https://wallpapercave.com/wp/wp2499227.jpg",
+                "https://wallpapercave.com/wp/wp13655129.jpg",
+                "https://wallpapercave.com/wp/wp5255482.jpg",
+                "https://wallpapercave.com/wp/wp14123851.jpg"
+              ].map((src, index) => (
+                <img
+                  key={index}
+                  src={src}
+                  alt={`Workshop ${index + 1}`}
+                  className="rounded-lg shadow-xl"
+                />
+              ))}
             </motion.div>
 
             <motion.div

@@ -6,20 +6,25 @@ import { Link } from "wouter";
 
 const packages = [
   {
-    name: "Standard Package",
-    price: "15,000",
-    description: "Essential modifications for enhanced performance",
+    name: "Prado 120 to 160 Modifications",
+    price: "28,00,000",
+    description: "Basic Package with Exterior & Interior Upgradations",
     features: [
-      "Basic Performance Tuning",
-      "LED Lighting Upgrade",
-      "Sport Exhaust System",
-      "Basic Interior Customization",
-      "Wheel & Tire Package"
+      "Exterior Upgradations",
+      "Doors Alteration",
+      "Door Handle Alterations",
+      "Side Mirrors",
+      "Quarter Fender Alterations",
+      "Foot Panel",
+      "LED Headlights & Taillights",
+      "Custom Alloy Wheels",
+      "Interior Dashboard Upgrade",
+      "Premium Leather Seats"
     ]
   },
   {
-    name: "Premium Package",
-    price: "35,000",
+    name: "Land Cruiser LC 200 to LC 300",
+    price: "45,00,000",
     description: "Comprehensive modifications for luxury and performance",
     features: [
       "Advanced Engine Tuning",
@@ -27,12 +32,16 @@ const packages = [
       "Full Leather Interior",
       "Advanced Suspension System",
       "Premium Audio System",
-      "Ceramic Coating Protection"
+      "Ceramic Coating Protection",
+      "Digital Instrument Cluster",
+      "360-Degree Camera System",
+      "Wireless Charging Pad",
+      "Adaptive Cruise Control"
     ]
   },
   {
-    name: "Ultimate Package",
-    price: "75,000",
+    name: "Lexus LX 470 to LX 570",
+    price: "75,00,000",
     description: "Complete vehicle transformation",
     features: [
       "Complete Engine Overhaul",
@@ -41,7 +50,10 @@ const packages = [
       "Advanced Off-Road Setup",
       "Premium Security Features",
       "Extended Warranty Coverage",
-      "Priority Service Access"
+      "Priority Service Access",
+      "Smart Infotainment System",
+      "Electric Tailgate",
+      "Ambient Lighting Customization"
     ]
   }
 ];
@@ -82,7 +94,7 @@ export default function Pricing() {
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <div className="mb-4">
-                      <span className="text-4xl font-bold">AED {pkg.price}</span>
+                      <span className="text-4xl font-bold">PKR {pkg.price}</span>
                     </div>
                     <ul className="space-y-2">
                       {pkg.features.map((feature, i) => (
@@ -115,7 +127,7 @@ export default function Pricing() {
             </p>
             <Link href="/contact">
               <Button size="lg" variant="outline">
-                Contact Us for Custom Quote
+                Get started with Custom Quote
               </Button>
             </Link>
           </motion.div>
