@@ -1,21 +1,26 @@
-# Security Policy
+Security Policy
+Supported Versions
+The following table outlines the versions of our project that currently receive security updates:
 
-## Supported Versions
+Version	Supported
+5.1.x	✅ Yes
+5.0.x	❌ No
+4.0.x	✅ Yes
+< 4.0	❌ No
+We strongly encourage users to upgrade to the latest supported versions to ensure security and stability.
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Reporting a Vulnerability
+We take security seriously and appreciate the community’s efforts in reporting vulnerabilities. If you discover a security issue, please follow these steps:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+Contact Us: Report vulnerabilities via [email/security contact] (replace with actual contact method).
+Provide Details: Include as much information as possible, such as:
+Affected version(s)
+Steps to reproduce
+Potential impact
+Response Timeline:
+Initial acknowledgment: Within 48 hours
+Investigation: Within 5-7 business days
+Patch release (if applicable): Based on severity and complexity
+If the vulnerability is valid, we will work to resolve it and may acknowledge contributors in our security advisories.
 
-## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Thank you for helping us maintain a secure environment!
