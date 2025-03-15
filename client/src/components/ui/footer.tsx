@@ -83,7 +83,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                info@autolevels.com
+                info@autolevels.pk
               </li>
             </ul>
           </div>
