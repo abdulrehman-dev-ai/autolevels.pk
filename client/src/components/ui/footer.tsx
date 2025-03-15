@@ -120,8 +120,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; {currentYear} Auto Levels. All rights reserved.</p>
+        <<div className="border-t mt-8 pt-8 text-center text-muted-foreground">
+          <p>
+            &copy; {currentYear} Auto Levels. All rights reserved. | Powered by{" "}
+            <a
+              href="https://linktr.ee/abdulrehman.dev.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Abdul Rehman
+            </a>
+          </p>
         </div>
       </div>
     </footer>
