@@ -23,7 +23,7 @@ export default function Contact() {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      content: "info@autolevels.com"
+      content: "info@autolevels.pk"
     },
     {
       icon: <Clock className="w-5 h-5" />,
