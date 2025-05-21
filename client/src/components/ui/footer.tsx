@@ -124,7 +124,7 @@ export function Footer() {
           <p>
             &copy; {currentYear} Auto Levels. All rights reserved.Powered by{" "}
             <a
-              href="https://linktr.ee/abdulrehman.dev.tech"
+              href="https://abdulrehmansarwar.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline"
